@@ -1,0 +1,24 @@
+---
+const { title = 'Outdoor Vending Innovation', description = 'Revolutionizing outdoor vending with cutting-edge technology.' } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <!-- Optional: Add an image for social sharing -->
+    <!-- <meta property="og:image" content="URL_TO_IMAGE" /> -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <slot />
+  </body>
+</html>
