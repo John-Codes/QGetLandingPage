@@ -36,7 +36,7 @@ const videos = await fetchVideos();
       {videos.length > 0 ? (
         videos.map((video: { id: { videoId: string }; snippet: { title: string; publishedAt: string; thumbnails: { medium: { url: string } } } }) => (
           <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-            <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} class="w-full h-48 object-cover" />
+<img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} class="w-full h-48 object-cover" loading="lazy" />
             <div class="p-4">
               <h3 class="text-lg font-semibold text-gray-800 mb-2">{video.snippet.title}</h3>
               <p class="text-sm text-gray-600">Published on {new Date(video.snippet.publishedAt).toLocaleDateString()}</p>
