@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  
+  <!-- Vending machine shape -->
+  <rect x="40" y="30" width="120" height="140" rx="10" fill="#4A90E2"/>
+  
+  <!-- Vending machine display -->
+  <rect x="60" y="50" width="80" height="40" rx="5" fill="none"/>
+  
+  <!-- Qget text -->
+  <text x="100" y="75" font-family="'Roboto', sans-serif" font-size="24" font-weight="700" fill="#000066" text-anchor="middle">Qget</text>
+  
+  <!-- Shark emoji -->
+  <text x="100" y="140" font-size="40" text-anchor="middle">🦈</text>
+  
+  <!-- Website URL -->
+  <text x="100" y="180" font-family="'Roboto', sans-serif" font-size="12" fill="#333333" text-anchor="middle">www.qget.com</text>
+</svg>
