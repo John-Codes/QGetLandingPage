@@ -1,5 +1,6 @@
 ---
 const { title = 'Outdoor Vending Innovation', description = 'Revolutionizing outdoor vending with cutting-edge technology.' } = Astro.props;
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -16,7 +17,6 @@ const { title = 'Outdoor Vending Innovation', description = 'Revolutionizing out
     <!-- Optional: Add an image for social sharing -->
     <!-- <meta property="og:image" content="URL_TO_IMAGE" /> -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body class="bg-gray-50 text-gray-800">
     <slot />
